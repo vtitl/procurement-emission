@@ -23,7 +23,9 @@ estat simple, estore(est_`y'_2)
 
 qui estat pretrend
 estat event,  window(-5, +11)
-csdid_plot, /*title (Event-Study)*/ graphregion(color(white)) yscale(range(-0.25 0.25)) saving(`y'_res , replace) 
+
+/*title (Event-Study)*/
+csdid_plot,  graphregion(color(white)) yscale(range(-0.25 0.25)) saving(`y'_res , replace) 
 graph export "$EMISSIONPROC_PROJECT_PATH/output/leadlags_`y'_res_v2.png", replace
 
 
