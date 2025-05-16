@@ -42,21 +42,21 @@ do "`dropboxdir'\codes\v01072024\FromFPDStoFirmData_v01072024.do"
 
 ***CREATE THE WORKING SAMPLE
 
-do "$EMISSIONPROC_PROJECT_PATH\code\DiD_DataPreparation_v01072024.do"
+do "$EMISSIONPROC_PROJECT_PATH/code/DiD_DataPreparation_v01072024.do"
 
 //// ANALYSES
 
 *** summary stats (Note: Ambrogio makes other summary stats on this working sample using Matlab.)
 
-do "$EMISSIONPROC_PROJECT_PATH\code\summStats_v01072024.do"
+do "$EMISSIONPROC_PROJECT_PATH/code/summStats_v01072024.do"
 
 *** baseline tables and event-study figures
 
-do "$EMISSIONPROC_PROJECT_PATH\code\DiD_baseline_v01072024.do"
+do "$EMISSIONPROC_PROJECT_PATH/code/DiD_baseline_v01072024.do"
 
 *** robustness check tables
 
-do "C:\Users\lgi\Dropbox\Procurement Emissions\codes\DiD_robChecks_v01072024.do"
+do "$EMISSIONPROC_PROJECT_PATH/code/DiD_robChecks_v01072024.do"
 
 *** heterogeneity tables
 
